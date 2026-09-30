@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+
+# Local runtime state and caches
+.DS_Store
+.t3/
+.agents/
+node_modules/
+__pycache__/
+*.pyc
+
+# Logs and generated output
+*.log
+tmp/
+dist/
+coverage/
