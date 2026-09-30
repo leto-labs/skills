@@ -29,4 +29,4 @@ Project-local installations are independent: update them from their consuming pr
 - Keep tool-specific defaults documented and overridable. Never assume an account has access to a particular model or service tier.
 - Test helper changes without live mutations first. Live secret updates, thread creation, and worktree deletion require appropriate authorization.
 - Never include real secret values or private conversation exports in fixtures.
-- Before accepting externally sourced code, review its origin and licensing. A repository license must be selected before an open-source release.
+- This repository uses the MIT license. Before accepting externally sourced code, review its origin, license compatibility, and any attribution requirements.

@@ -50,4 +50,8 @@ This is a source repository, not a consuming project: no root skill lockfile, ve
 
 These skills can modify secrets, threads, and worktrees. Read their instructions, use scoped credentials, and preview operations where supported. Never commit tokens, cookies, `.env` files, or exported conversations. Installations do not grant permission to publish, delete data, or interrupt unrelated work.
 
-See [contributing](docs/contributing.md) for development and updates. A distribution license has not yet been selected.
+See [contributing](docs/contributing.md) for development and updates.
+
+## License
+
+[MIT](LICENSE) — Copyright (c) 2026 Leto Labs.
