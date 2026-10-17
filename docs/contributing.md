@@ -14,8 +14,6 @@ When a consuming project discovers an issue or improvement, bring the suggestion
 4. Reinstall the changed skill globally from the pushed source:
 
    ```bash
-   skills add leto-labs/skills --global --agent universal --skill t3-orchestration --yes
-   # Or, for the other skill:
    skills add leto-labs/skills --global --agent universal --skill bitwarden-secrets --yes
    ```
 
@@ -25,8 +23,8 @@ Project-local installations are independent: update them from their consuming pr
 
 ## Review boundaries
 
-- Keep the two skills independently installable.
+- Keep the skill independently installable.
 - Keep tool-specific defaults documented and overridable. Never assume an account has access to a particular model or service tier.
-- Test helper changes without live mutations first. Live secret updates, thread creation, and worktree deletion require appropriate authorization.
+- Test helper changes without live mutations first. Live secret updates require appropriate authorization.
 - Never include real secret values or private conversation exports in fixtures.
 - This repository uses the MIT license. Before accepting externally sourced code, review its origin, license compatibility, and any attribution requirements.
