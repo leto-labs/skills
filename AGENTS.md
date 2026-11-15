@@ -1,6 +1,6 @@
 # Repository instructions
 
-This repository maintains the self-contained `bitwarden-secrets` skill.
+This repository maintains the self-contained `beads` and `bitwarden-secrets` skills.
 
 Before editing, run `git status --short --branch`. Preserve unrelated work. Keep changes inside this repository unless the user asks to update an installation.
 
@@ -18,6 +18,7 @@ Before editing, run `git status --short --branch`. Preserve unrelated work. Keep
 
 ```bash
 bash -n skills/bitwarden-secrets/scripts/bws_env_sync.sh
+python3 -m py_compile skills/beads/scripts/bd_mermaid.py
 git diff --check
 ```
 

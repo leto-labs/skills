@@ -1,9 +1,10 @@
 # Agent Skills
 
-A self-contained agent skill maintained by Leto Labs:
+Self-contained agent skills maintained by Leto Labs:
 
 | Skill | Purpose | Requirements |
 | --- | --- | --- |
+| [beads](skills/beads/SKILL.md) | Track and coordinate work in a Beads (`bd`) ledger: verify the target, claims, dependencies, JSON extraction, Mermaid diagrams. | `bd` CLI with a reachable Dolt-backed database; Python 3 for the diagram helper |
 | [bitwarden-secrets](skills/bitwarden-secrets/SKILL.md) | Manage Bitwarden Secrets Manager credentials and sync selected keys with `.env` files. | Bash 4+, `bws`, `jq`, a scoped machine-account token |
 
 The skill contains its own instructions, references, and executable helpers.
@@ -37,6 +38,7 @@ Updates may include other CLI-managed global skills. To refresh only this skill,
 
 ```text
 skills/
+  beads/               SKILL.md, command reference, Mermaid helper
   bitwarden-secrets/   SKILL.md, references, Bash sync helper
 docs/
   contributing.md     Validation and source-to-installation update workflow
